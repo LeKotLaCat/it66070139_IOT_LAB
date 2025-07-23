@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <h1>ระบบจัดการข้อมูลนักศึกษา</h1>
-
-        
         <form id="student-form">
             <h2>เพิ่ม/แก้ไขข้อมูลนักศึกษา</h2>
-            <input type="hidden" id="student-id">
+            <input type="hidden" id="student-id-hidden">
             <div class="form-group">
                 <label for="first_name">ชื่อ:</label>
                 <input type="text" id="first_name" required>
@@ -42,10 +39,7 @@
             </div>
             <button type="submit" id="submit-button">เพิ่มข้อมูล</button>
         </form>
-
         <hr>
-
-        
         <h2>รายชื่อนักศึกษา</h2>
         <table id="student-table">
             <thead>
@@ -57,12 +51,9 @@
                     <th>การจัดการ</th>
                 </tr>
             </thead>
-            <tbody id="student-table-body">
-                
-            </tbody>
+            <tbody id="student-table-body"></tbody>
         </table>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-name = "hono-student-api"
-main = "index.js"
+name = "arai_suk_yang_website"
+
 compatibility_date = "2025-07-23"
-compatibility_flags = ["nodejs_compat"]
+main = "api.js"
 
 [[d1_databases]]
 binding = "DB"
