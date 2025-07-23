@@ -17,10 +17,8 @@
   "homepage": "https://github.com/LeKotLaCat/it66070139_IOT_LAB#readme",
   "description": "",
   "dependencies": {
-    "@hono/node-server": "^1.17.1",
     "dotenv": "^17.2.0",
     "hono": "^4.8.5",
-    "mysql2": "^3.14.2",
     "pg": "^8.16.3"
   }
 }

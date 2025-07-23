@@ -1,0 +1,9 @@
+name = "hono-student-api"
+main = "index.js"
+compatibility_date = "2025-07-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "student-db"
+database_id = "072a72d1-d91e-42ed-b0e1-17c7e9cbc36c"
