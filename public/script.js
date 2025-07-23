@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const baseApiUrl = 'https://student-api-final.your-subdomain.workers.dev';
-    const apiUrl = `${baseApiUrl}/api/students`;
-
+    // const baseApiUrl = 'https://student-api-final.your-subdomain.workers.dev';
+    // const apiUrl = `${baseApiUrl}/api/students`;
+    const apiUrl = '/api/students';
     const studentForm = document.getElementById('student-form');
     const studentTableBody = document.getElementById('student-table-body');
     const studentIdHiddenInput = document.getElementById('student-id-hidden');
