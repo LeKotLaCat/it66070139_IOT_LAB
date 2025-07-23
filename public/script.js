@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // URL ของ API ที่รันโดย `wrangler dev`
-    // เราต้องใส่ URL เต็มๆ เพราะ Frontend และ Backend รันบน Port ที่ต่างกัน
-    const baseApiUrl = 'http://127.0.0.1:8787'; 
+    const baseApiUrl = 'https://student-api-final.your-subdomain.workers.dev';
     const apiUrl = `${baseApiUrl}/api/students`;
 
     const studentForm = document.getElementById('student-form');
