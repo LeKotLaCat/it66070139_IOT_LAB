@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchStudents = async () => {
         try {
             const response = await fetch(apiUrl);
-            if (!response.ok) throw new Error('Network response was not ok');
+            if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Network response was not ok. Status: ${response.status}. Body: ${errorText}`);
+        }
             const students = await response.json();
             studentTableBody.innerHTML = '';
             students.forEach(student => {
@@ -30,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         } catch (error) {
             console.error('Error fetching students:', error);
+            studentTableBody.innerHTML = '<tr><td colspan="5">เกิดข้อผิดพลาดในการโหลดข้อมูล</td></tr>';
         }
     };
 
